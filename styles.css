@@ -7,45 +7,67 @@ body {
     background-color: #f9e3e3;
     font-family: 'Arial', sans-serif;
     flex-direction: column;
-  }
-  
-  .container {
     text-align: center;
-  }
-  
-  h1 {
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
     font-size: 2.5em;
     color: #d32f2f;
-  }
-  
-  .buttons {
+}
+
+.reasons-title {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+}
+
+.reasons-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.reasons-list li {
+    font-size: 1.1em;
+    color: #444;
+    margin: 5px 0;
+}
+
+.buttons {
     margin-top: 20px;
-  }
-  
-  .yes-button {
+}
+
+.yes-button, .no-button {
     font-size: 1.5em;
     padding: 10px 20px;
-    margin-right: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.yes-button {
     background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .no-button {
-    font-size: 1.5em;
-    padding: 10px 20px;
+    margin-right: 10px;
+}
+
+.no-button {
     background-color: #f44336;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .gif_container img {
+}
+
+.yes-button:hover, .no-button:hover {
+    transform: scale(1.1);
+}
+
+.gif_container img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
     margin-top: 20px;
-  }
+}
